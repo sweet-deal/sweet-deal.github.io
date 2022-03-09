@@ -1,0 +1,18 @@
+[
+        {
+            "naziv" : "Facebook",
+            "href" : "https://facebook.com"
+        },
+        {
+            "naziv" : "Instagram",
+            "href" : "https://instagram.com"
+        },
+        {
+            "naziv" : "LinkedIn",
+            "href" : "https://linkedin.com"
+        },
+        {
+            "naziv" : "Snapchat",
+            "href" : "https://snapchat.com"
+        }
+    ]
