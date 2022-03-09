@@ -88,8 +88,8 @@ p.banner-text {
 }
 .col img {
   height: 300px;
-  width: 450px;
   border: 3px solid #fff;
+  width: auto;
 }
 .card {
   width: 450px;
