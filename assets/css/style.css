@@ -224,10 +224,12 @@ select {
   }
   .col img {
     height: 275px;
-    width: 425px;
   }
   .card-body {
     width: 425px;
+  }
+  .container-subscribe h3 {
+    font-size: 23px;
   }
 }
 @media only screen and (max-width: 1111px) {
@@ -243,6 +245,9 @@ select {
   }
   .card-body {
     width: 400px;
+  }
+  .proizvod-img {
+    height: 400px !important;
   }
 }
 @media only screen and (max-width: 1025px) {
@@ -271,5 +276,13 @@ select {
   }
   header {
     justify-content: space-between;
+  }
+  .container-subscribe h3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-subscribe h3 {
+    font-size: 16px;
   }
 }

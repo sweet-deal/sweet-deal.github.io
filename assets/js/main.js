@@ -321,7 +321,7 @@ function ispisProizvoda(podaci, idBloka) {
         for (let pr of podaci) {
         proizvod += `<div class="col">
                         <div class="card proizvod">
-                            <img src="${pr.imgSrc}" class="card-img-top img-fluid" alt="${pr.naziv}">
+                            <img src="${pr.imgSrc}" class="card-img-top img-fluid proizvod-img" alt="${pr.naziv}">
                             <div class="card-body">
                                 <h2 class="card-title"><b>${pr.naziv}</b></h5>
                                 <p class="card-text"><span class=price>${pr.cena}$</span></br>${pr.tekst.opis}</br>Ingredients: ${pr.tekst.sastojci}</p>
