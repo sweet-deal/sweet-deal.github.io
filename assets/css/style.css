@@ -95,6 +95,8 @@ p.banner-text {
   width: 450px;
   margin: auto;
   border: none !important;
+  background-clip: border-box;
+  align-items: center;
 }
 .card-body {
   text-align: center;
@@ -252,6 +254,9 @@ select {
   }
   .card {
     width: auto;
+  }
+  .row {
+    margin-right: 0px !important;
   }
 }
 @media only screen and (max-width: 850px) {
