@@ -1,8 +1,8 @@
-var navMeni, social, kategorije, sortiranje, proizvodi;
+var navMeni, social, kategorije, sortiranje, proizvodi, ispisIndexCard;
 
 
 window.onload = function(){
-    /*navMeni = [
+    navMeni = [
         {
             "naziv" : "Home",
             "href" : "index.html"
@@ -41,7 +41,7 @@ window.onload = function(){
             "naziv" : "Snapchat",
             "href" : "https://snapchat.com"
         }
-    ]*/
+    ]
     kategorije = [
         {   "id": 0,
             "naziv" : "Select"    
@@ -247,10 +247,33 @@ window.onload = function(){
       }
    }
 ]
+    /*indexCard = [
+        {
+            "id" : 1,
+            "href" : "assets/images/hearts.jpg",
+            "naziv" : "Card Title",
+            "tekst" : ""
+        },
+        {
+            "id" : 2,
+            "href" : "",
+            "tekst" : ""
+        },
+        {
+            "id" : 3,
+            "href" : "",
+            "tekst" : ""
+        },
+        {
+            "id" : 4,
+            "href" : "",
+            "tekst" : ""
+        }
+    ]*/
 
-    //this.ispisListiLinkova(navMeni, "#nav-meni");
-    //this.ispisListiLinkova(navMeni, "#nav-meni-futer");
-    //this.ispisListiLinkova(social, "#socials");
+    this.ispisListiLinkova(navMeni, "#nav-meni");
+    this.ispisListiLinkova(navMeni, "#nav-meni-futer");
+    this.ispisListiLinkova(social, "#socials");
     this.padajucaLista(kategorije, "#kategorije", "ddlKategorije", "Categories:");
     this.padajucaLista(sortiranje, "#sortiranje", "ddlSort", "Sort by:");
     this.ispisProizvoda(proizvodi, "#proizvod");
@@ -333,3 +356,34 @@ function ispisProizvoda(podaci, idBloka) {
     
     document.querySelector(idBloka).innerHTML = proizvod;
 }
+function ispisIndexCard(podaci, idBloka){
+    let html=``;
+    for (let card of podaci){
+        html += `<div class="col">
+          <div class="card">
+            <img src="${card.href}" class="card-img-top" alt="${card.naziv}" />
+            <div class="card-body">
+              <h5 class="card-title">${card.naziv}</h5>
+              <p class="card-text">
+                ${card.tekst}
+              </p>
+            </div>
+          </div>
+        </div>`
+    }
+    document.querySelector(idBloka).innerHTML = html;
+}
+
+
+`<div class="col">
+          <div class="card">
+            <img src="assets/images/hearts.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit longer.
+              </p>
+            </div>
+          </div>
+        </div>`
