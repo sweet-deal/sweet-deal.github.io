@@ -247,29 +247,32 @@ window.onload = function(){
       }
    }
 ]
-    /*indexCard = [
+    indexCard = [
         {
             "id" : 1,
             "href" : "assets/images/hearts.jpg",
             "naziv" : "Card Title",
-            "tekst" : ""
+            "tekst" : "Text"
         },
         {
             "id" : 2,
-            "href" : "",
-            "tekst" : ""
+            "href" : "assets/images/cupcakes.jpg",
+            "naziv" : "Card Title",
+            "tekst" : "Text"
         },
         {
             "id" : 3,
-            "href" : "",
-            "tekst" : ""
+            "href" : "assets/images/gummies.jpg",
+            "naziv" : "Card Title",
+            "tekst" : "Text"
         },
         {
             "id" : 4,
-            "href" : "",
-            "tekst" : ""
+            "href" : "assets/images/macarons.jpg",
+            "naziv" : "Card Title",
+            "tekst" : "Text"
         }
-    ]*/
+    ]
 
     this.ispisListiLinkova(navMeni, "#nav-meni");
     this.ispisListiLinkova(navMeni, "#nav-meni-futer");
@@ -277,6 +280,7 @@ window.onload = function(){
     this.padajucaLista(kategorije, "#kategorije", "ddlKategorije", "Categories:");
     this.padajucaLista(sortiranje, "#sortiranje", "ddlSort", "Sort by:");
     this.ispisProizvoda(proizvodi, "#proizvod");
+    this.ispisIndexCard(indexCard, "#index-cards");
 
     $(document).on("change", "#ddlKategorije", function(){
         let idKat = $("#ddlKategorije").val();
@@ -310,15 +314,15 @@ window.onload = function(){
         }
     })
 }
-/*function ispisListiLinkova (podaci, idBloka){
+function ispisListiLinkova (podaci, idBloka){
     let html = `<ul>`;
     for (let li of podaci){
         html += `<a href="${li.href}"><li>${li.naziv}</li></a>`;
     }
     html += `</ul>`;
 
-    document.querySelector(idBloka).innerHTML = html;
-}*/
+    $(idBloka).html(html);
+}
 
 
 
@@ -354,7 +358,7 @@ function ispisProizvoda(podaci, idBloka) {
     }
     }
     
-    document.querySelector(idBloka).innerHTML = proizvod;
+    $(idBloka).html(proizvod);
 }
 function ispisIndexCard(podaci, idBloka){
     let html=``;
@@ -371,19 +375,7 @@ function ispisIndexCard(podaci, idBloka){
           </div>
         </div>`
     }
-    document.querySelector(idBloka).innerHTML = html;
+    $(idBloka).html(html);
 }
 
 
-`<div class="col">
-          <div class="card">
-            <img src="assets/images/hearts.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit longer.
-              </p>
-            </div>
-          </div>
-        </div>`
