@@ -1,4 +1,4 @@
-window.onload = function(){
+
     $.ajax({
         url: "assets/data/indexCard.json",
         method: "get",
@@ -11,7 +11,7 @@ window.onload = function(){
             console.log(xhr);
         }
     })
-}
+
 
 function ispisIndexCard(podaci){
     let html=``;

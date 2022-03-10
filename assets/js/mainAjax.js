@@ -1,4 +1,4 @@
-window.onload = function(){
+
     $.ajax({
         url: "assets/data/navMeni.json",
         method: "get",
@@ -26,7 +26,7 @@ window.onload = function(){
         }
     })
     
-}
+
 function ispisListiLinkova (podaci){
     let html = `<ul>`;
     for (let li of podaci){
