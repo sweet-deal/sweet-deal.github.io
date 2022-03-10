@@ -1,0 +1,25 @@
+[
+        {   "id": 0,
+            "naziv" : "Select"    
+        },
+        {
+            "id" : 1,
+            "naziv" : "Gummies"
+        },
+        {
+            "id" : 2,
+            "naziv" : "Hard Candy"
+        },
+        {
+            "id" : 3,
+            "naziv" : "Caramels"
+        },
+        {
+            "id" : 4,
+            "naziv" : "Custom Orders"
+        },
+        {
+            "id" : 5,
+            "naziv" : "Chocolates"
+        }
+    ]

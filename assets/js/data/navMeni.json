@@ -1,0 +1,22 @@
+[
+        {
+            "naziv" : "Home",
+            "href" : "index.html"
+        },
+        {
+            "naziv" : "About Us",
+            "href" : "about-us.html"
+        },
+        {
+            "naziv" : "Products",
+            "href" : "products.html"
+        },
+        {
+            "naziv" : "Contact Us",
+            "href" : "contact.html"
+        },
+        {
+            "naziv" : "Author",
+            "href" : "author.html"
+        }
+    ]
