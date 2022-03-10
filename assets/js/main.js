@@ -7,10 +7,6 @@ window.onload = function(){
             "href" : "index.html"
         },
         {
-            "naziv" : "About Us",
-            "href" : "about-us.html"
-        },
-        {
             "naziv" : "Products",
             "href" : "products.html"
         },
