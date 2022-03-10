@@ -34,7 +34,7 @@ function ispisListiLinkova (podaci){
     }
     html += `</ul>`;
 
-    $("#nav-meni").html(proizvod);
+    $("#nav-meni").html(html);
 }
 function ispisListiLinkovaFuter (podaci){
     let html = `<ul>`;
