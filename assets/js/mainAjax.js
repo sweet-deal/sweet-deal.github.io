@@ -1,6 +1,6 @@
 
     $.ajax({
-        url: "assets/data/navMeni.json",
+        url: "assets/js/data/navMeni.json",
         method: "get",
         dataType: "json",
         success: function(data){
@@ -13,7 +13,7 @@
         }
     })
     $.ajax({
-        url: "assets/data/social.json",
+        url: "assets/js/data/social.json",
         method: "get",
         dataType: "json",
         success: function(data){

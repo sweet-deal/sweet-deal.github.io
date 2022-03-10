@@ -1,6 +1,6 @@
 window.onload = function(){
     $.ajax({
-        url: "assets/data/proizvodi.json",
+        url: "assets/js/data/proizvodi.json",
         method: "get",
         dataType: "json",
         success: function(data){
@@ -13,7 +13,7 @@ window.onload = function(){
     })
 
     $.ajax({
-        url: "assets/data/kategorije.json",
+        url: "assets/js/data/kategorije.json",
         method: "get",
         dataType: "json",
         success: function(data){
@@ -26,7 +26,7 @@ window.onload = function(){
     })
 
     $.ajax({
-        url: "assets/data/sortiranje.json",
+        url: "assets/js/data/sortiranje.json",
         method: "get",
         dataType: "json",
         success: function(data){

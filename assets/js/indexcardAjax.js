@@ -1,6 +1,6 @@
 
     $.ajax({
-        url: "assets/data/indexCard.json",
+        url: "assets/js/data/indexCard.json",
         method: "get",
         dataType: "json",
         success: function(data){
