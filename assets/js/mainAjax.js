@@ -50,5 +50,5 @@ function ispisSocial (podaci){
     }
     html += `</ul>`;
 
-    $("#nav-meni-futer").html(html);
+    $("#socials").html(html);
 }
