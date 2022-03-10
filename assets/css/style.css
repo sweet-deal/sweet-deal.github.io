@@ -221,17 +221,58 @@ select {
   margin-top: 40px;
   margin-bottom: 20px;
 }
-table {
+form {
   color: var(--darkpurple);
   background-color: var(--cream);
   border-collapse: collapse;
   border: 2px solid var(--darkerpink);
   width: 50%;
-}
-form {
+  margin-left: 25%;
   margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
 }
-
+.form-control {
+  color: var(--darkpurple) !important;
+  background-color: rgba(255, 224, 224, 0.2) !important;
+}
+.form-control small {
+  visibility: hidden;
+}
+.formBtn {
+  background-color: var(--darkerpink);
+  color: var(--darkerpurle);
+  margin: 10px 10px 10px 80% !important;
+}
+.formBtn:hover {
+  background-color: var(--darkpurple);
+  color: var(--lavander);
+}
+.form-control input {
+  padding: 5px;
+  margin: 5px;
+}
+.form-control textarea {
+  padding: 5px;
+  margin: 5px 15px;
+}
+.address {
+  display: flex;
+  align-items: center;
+}
+.error input {
+  border: 2px solid #ff1493;
+  color: #ff1493;
+}
+.success input {
+  border: 3px solid #4ec94e;
+  color: #4ec94e;
+}
+.form-control.error small {
+  visibility: visible !important;
+  color: #ff1493;
+}
 @media only screen and (max-width: 1201px) {
   .nav-header a {
     font-size: 25px;
