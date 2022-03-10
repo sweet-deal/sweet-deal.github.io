@@ -17,9 +17,7 @@
         method: "get",
         dataType: "json",
         success: function(data){
-            console.log(data);
-            ispisListiLinkova(data);
-            ispisListiLinkovaFuter(data);
+            ispisSocial(data);
         },
         error: function(xhr){
             console.log(xhr);
