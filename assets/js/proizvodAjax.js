@@ -83,7 +83,7 @@ function ispisProizvoda(podaci){
                             </div>
                         </div>
                     </div>`
-    }
+        }
     }
     
     $("#proizvod").html(proizvod);
