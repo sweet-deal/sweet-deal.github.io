@@ -228,6 +228,9 @@ table {
   border: 2px solid var(--darkerpink);
   width: 50%;
 }
+form {
+  margin-bottom: 40px;
+}
 
 @media only screen and (max-width: 1201px) {
   .nav-header a {
