@@ -1,6 +1,5 @@
 var navMeni, social, kategorije, sortiranje, proizvodi, ispisIndexCard;
 
-
 window.onload = function(){
     navMeni = [
         {
@@ -17,7 +16,7 @@ window.onload = function(){
         },
         {
             "naziv" : "Contact Us",
-            "href" : "contact.html"
+            "href" : "contact-us.html"
         },
         {
             "naziv" : "Author",

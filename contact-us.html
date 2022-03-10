@@ -8,6 +8,100 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 </head>
 
+<body>
+    <div class="main-container">
+        <header>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid logo">
+                    <a href="index.html"><img src="assets/images/logocs.jpg" alt="Sweet Deal"
+                            class="logo-img navbar-brand"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sweet Deal</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body" id="nav-meni">
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <h1 class="h1Form">Sign up today!</h1>
+
+        <form>
+            <table align="center" cellpadding="10">
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname" maxlength="30"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname" maxlength="30"/></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="date" id="date"/></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" maxlength="100"/></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="text" name="phone" maxlength="10"/></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        Male <input type="radio" name="gender" value="male"/>
+                        Female <input type="radio" name="gender" value="female"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" id="address" cols="30" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit"/>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+
+<footer>
+    <div class="container-footer">
+        <nav class="nav-footer" id="nav-meni-futer">
+
+        </nav>
+    </div>
+    <div class="container-footer">
+        <div class="contact">
+            <ul>
+                <li>Store locations:</li>
+                <li>19 Gonzales Lane</li>
+                <li>3 Foster Street</li>
+                <li>967 Elmwood Court</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-footer">
+        <div class="social-list" id="socials">
+            <h5>You can find our socials here:</h5>
+
+        </div>
+    </div>
+
 
 
 </footer>

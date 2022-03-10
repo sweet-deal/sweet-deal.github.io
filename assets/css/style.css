@@ -214,6 +214,20 @@ select {
   display: flex;
   margin-top: 40px;
 }
+.h1Form {
+  font-weight: bold;
+  text-align: center;
+  color: var(--darkpurple);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+table {
+  color: var(--darkpurple);
+  background-color: var(--cream);
+  border-collapse: collapse;
+  border: 2px solid var(--darkerpink);
+  width: 50%;
+}
 
 @media only screen and (max-width: 1201px) {
   .nav-header a {
