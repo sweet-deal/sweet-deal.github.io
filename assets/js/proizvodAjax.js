@@ -4,7 +4,6 @@ window.onload = function(){
         method: "get",
         dataType: "json",
         success: function(data){
-            console.log(data);
             ispisProizvoda(data);
         },
         error: function(xhr){
@@ -17,7 +16,6 @@ window.onload = function(){
         method: "get",
         dataType: "json",
         success: function(data){
-            console.log(data);
             padajucaLista(data, "#kategorije", "ddlKategorije", "Categories:");
         },
         error: function(xhr){
@@ -30,7 +28,6 @@ window.onload = function(){
         method: "get",
         dataType: "json",
         success: function(data){
-            console.log(data);
             padajucaLista(data, "#sortiranje", "ddlSort", "Sort by:");
         },
         error: function(xhr){
