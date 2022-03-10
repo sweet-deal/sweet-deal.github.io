@@ -73,7 +73,6 @@ function ispisProizvoda(podaci){
         proizvod += `<p>No products are currently available.</p>`
     }
     else {
-        proizvod += `<div class="row row-cols-1 row-cols-md-3 g-4">`
         for (let pr of podaci) {
         proizvod += `<div class="col">
                         <div class="card proizvod">
@@ -85,11 +84,11 @@ function ispisProizvoda(podaci){
                         </div>
                     </div>`
         }
-        proizvod += `</div>`
     }
     
     $("#proizvod").html(proizvod);
 }
+
 function padajucaLista(podaci, idBloka, idListe, labelTxt) {
     let lista = `<div class="form-group">
     <label>${labelTxt}</label>
