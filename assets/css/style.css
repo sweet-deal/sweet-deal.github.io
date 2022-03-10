@@ -281,9 +281,8 @@ form {
   height: 500px;
   width: -moz-available;
 }
-.autor,
 .opis-socials {
-  width: 30%;
+  width: 35%;
 }
 .rowautor {
   display: flex;
@@ -371,5 +370,23 @@ form {
 @media only screen and (max-width: 600px) {
   .container-subscribe h3 {
     font-size: 16px;
+  }
+  .rowautor {
+    display: unset;
+  }
+  .autor img {
+    width: auto;
+    margin: auto;
+  }
+  .opis-socials {
+    width: unset;
+    text-align: center;
+  }
+  .autor {
+    display: flex;
+    padding-top: 50px;
+  }
+  footer {
+    height: 200px;
   }
 }
