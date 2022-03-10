@@ -269,13 +269,14 @@ window.onload = function(){
         }
     ]
 
+    
+    this.ispisIndexCard(indexCard, "#index-cards");
     this.ispisListiLinkova(navMeni, "#nav-meni");
     this.ispisListiLinkova(navMeni, "#nav-meni-futer");
     this.ispisListiLinkova(social, "#socials");
     this.padajucaLista(kategorije, "#kategorije", "ddlKategorije", "Categories:");
     this.padajucaLista(sortiranje, "#sortiranje", "ddlSort", "Sort by:");
     this.ispisProizvoda(proizvodi, "#proizvod");
-    this.ispisIndexCard(indexCard, "#index-cards");
 
     $(document).on("change", "#ddlKategorije", function(){
         let idKat = $("#ddlKategorije").val();
@@ -355,6 +356,7 @@ function ispisProizvoda(podaci, idBloka) {
     
     $(idBloka).html(proizvod);
 }
+
 function ispisIndexCard(podaci, idBloka){
     let html=``;
     for (let card of podaci){
