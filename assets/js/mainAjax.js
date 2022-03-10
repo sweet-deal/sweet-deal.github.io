@@ -12,7 +12,19 @@ window.onload = function(){
             console.log(xhr);
         }
     })
-
+    $.ajax({
+        url: "assets/data/social.json",
+        method: "get",
+        dataType: "json",
+        success: function(data){
+            console.log(data);
+            ispisListiLinkova(data);
+            ispisListiLinkovaFuter(data);
+        },
+        error: function(xhr){
+            console.log(xhr);
+        }
+    })
     
 }
 function ispisListiLinkova (podaci){
@@ -22,7 +34,7 @@ function ispisListiLinkova (podaci){
     }
     html += `</ul>`;
 
-    document.querySelector("#nav-meni").innerHTML = html;
+    $("#nav-meni").html(proizvod);
 }
 function ispisListiLinkovaFuter (podaci){
     let html = `<ul>`;
@@ -31,5 +43,14 @@ function ispisListiLinkovaFuter (podaci){
     }
     html += `</ul>`;
 
-    document.querySelector("#nav-meni-futer").innerHTML = html;
+    $("#nav-meni-futer").html(html);
+}
+function ispisSocial (podaci){
+    let html = `<ul>`;
+    for (let li of podaci){
+        html += `<a href="${li.href}"><li>${li.naziv}</li></a>`;
+    }
+    html += `</ul>`;
+
+    $("#nav-meni-futer").html(html);
 }
